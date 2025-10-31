@@ -5,6 +5,7 @@
 
 # User-specific files
 *.rsuser
+# 20251030 有效
 *.suo
 *.user
 *.userosscache
@@ -18,29 +19,44 @@
 mono_crash.*
 
 # Build results
-[Dd]ebug/
+
+# 20251030 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
+# 20251030 [Rr]elease/
 [Rr]eleases/
 x64/
 x86/
-[Ww][Ii][Nn]32/
+
+# 20251030 [Ww][Ii][Nn]32/
+# 20251030 增加 忽略目录下所有文件
+[Ww][Ii][Nn]32/*
+![Ww][Ii][Nn]32/Advantech.Adam.DLL
+# 20251030 增加结束
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 [Aa][Rr][Mm]64[Ee][Cc]/
 bld/
+# 20251030 有效
 [Oo]bj/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
 
 # Build results on 'Bin' directories
-**/[Bb]in/*
+
+# 20251030 **/[Bb]in/*
+# 20251030 增加 
+AluminumWelding/bin/debug/*
+!AluminumWelding/bin/debug/*.vpp 
+AluminumWelding/bin/release/*
+!AluminumWelding/bin/release/*.vpp 
+# 20251030 增加结束
 # Uncomment if you have tasks that rely on *.refresh files to move binaries
 # (https://github.com/github/gitignore/pull/3736)
 #!**/[Bb]in/*.refresh
 
 # Visual Studio 2015/2017 cache/options directory
+# 20251030 有效
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
@@ -416,3 +432,7 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9f68f3771165c22e64fcfea090b85757bb3037f4
